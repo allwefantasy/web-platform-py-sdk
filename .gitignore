@@ -2,3 +2,5 @@
 .idea/
 web-platform-py-sdk.iml
 web_platform_py_sdk.egg-info/
+build
+dist

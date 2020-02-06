@@ -7,27 +7,27 @@ import sys
 from setuptools import setup
 
 if sys.version_info < (3, 6):
-    print("Python versions prior to 3.6 are not supported for pip installed web-platform-py-sdk.",
+    print("Python versions prior to 3.6 are not supported for pip installed web_platform_py_sdk.",
           file=sys.stderr)
     sys.exit(-1)
 
 try:
     exec(open('tech/mlsql/serviceframework/sdk/version.py').read())
 except IOError:
-    print("Failed to load web-platform-py-sdk version file for packaging.",
+    print("Failed to load web_platform_py_sdk version file for packaging.",
           file=sys.stderr)
     sys.exit(-1)
 
 VERSION = __version__
 
 setup(
-    name='web-platform-py-sdk',
+    name='web_platform_py_sdk',
     version=VERSION,
     description='web-platform sdk tools',
     long_description="With this lib help you to develop base on web-platform",
     author='ZhuWilliam',
     author_email='allwefantasy@gmail.com',
-    url='https://github.com/allwefantasy/web-platform-py-sdk',
+    url='https://github.com/allwefantasy/web_platform_py_sdk',
     packages=['tech',
               'tech.mlsql',
               'tech.mlsql.serviceframework',
